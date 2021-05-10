@@ -27,9 +27,6 @@ body {
     overflow: visible;
     padding: 16px;
     z-index: 1;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
   }
   .sticky + .content {
     padding-top: 60px;
@@ -81,11 +78,6 @@ body {
     margin-top: 1rem;
   }
   /*heroimage and herotext*/
-  .flexcontainer{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
   .box1{
     height: auto;
     width: auto;
@@ -97,7 +89,7 @@ body {
     padding-bottom: 80px;
     position: relative;
     text-align: center;
-    background-color: #192024;   
+    background-color: #192024;
   }
   .box1-title{
     position: static;
@@ -119,16 +111,11 @@ body {
     position: relative;
   }
   .column{
-    float: left;
-    width: 49%;
-    padding: 5px;
+float: left;
+width: 49%;
+padding: 5px;
   }
 .kontaktdaten{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   padding: 16;
   overflow: visible;
   display:block;
@@ -138,18 +125,11 @@ body {
   
 }
 .kliste{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  text-align: justify;
   font-size: 18px;
   font-weight: lighter;
 }
 .über-content{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #192024;
   padding: 16px;
   overflow: visible;
@@ -157,11 +137,6 @@ body {
   color: white;
 }
 .über-box{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   padding-left: 100;
   padding-top: 50;
 }
