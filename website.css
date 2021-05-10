@@ -27,6 +27,9 @@ body {
     overflow: visible;
     padding: 16px;
     z-index: 1;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
   }
   .sticky + .content {
     padding-top: 60px;
