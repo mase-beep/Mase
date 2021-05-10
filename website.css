@@ -1,27 +1,37 @@
 body {
     background-color: #111;
-    
-  }
-  ul {
-    list-style-type: none;
     margin: 0;
     padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  #navbar {
     overflow: hidden;
     background-color: #192024;
-    position: sticky;
-    top: 0;
+    z-index: 2;
+    border-bottom: 1px solid black;
   }
-  li {
-    float: left; 
-  }
-  li a {
+  #navbar a {
+    float: left;
     display: block;
     color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration: none; 
   }
-  li a:hover {
+  .sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .content{
+    overflow: visible;
+    padding: 16px;
+    z-index: 1;
+  }
+  .sticky + .content {
+    padding-top: 60px;
+  }
+  #navbar a:hover {
     background-color: #111
   }
   .active {
@@ -30,9 +40,11 @@ body {
   /*Navigator*/
 
   .hero {
+    overflow: visible;
+    display:block;
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    width: auto;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,28 +56,87 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("baum.JPG");
-    background-position: center center;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),  url("baum2.JPG");
+    background-position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
   } 
-  .hero.content {
+  .hero-content {
     position: relative;
-    font-family:"Monserat", sans-serif;
     color: white;
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 0.625;
   }
   .hero-title{
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 0;
-    color: white;
   }
-  .hero-subtitle {
+  .hero-subtitle{
     font-size: 2rem;
     font-weight: 200;
     margin-top: 1rem;
-    color: white;
   }
   /*heroimage and herotext*/
+  .box1{
+    height: auto;
+    width: auto;
+    overflow:visible;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+    text-align: center;
+    background-color: #192024;
+  }
+  .box1-title{
+    position: static;
+    font-size: 34px;
+    font-weight: 50;
+    size: 30px;
+    height: 36px;
+    color: white;
+    text-align: center;
+    margin-bottom: 7rem;
+  }
+  .row::after{
+    content:"";
+    clear: both;
+    padding: 15rem;
+    display: table;
+    width: auto;
+    height: auto;
+    position: relative;
+  }
+  .column{
+float: left;
+width: 49%;
+padding: 5px;
+  }
+.kontaktdaten{
+  padding: 16;
+  overflow: visible;
+  display:block;
+  position: relative;
+  background-color: #192024;
+  color: white;
+  
+}
+.kliste{
+  text-align: justify;
+  font-size: 18px;
+  font-weight: lighter;
+}
+.über-content{
+  background-color: #192024;
+  padding: 16px;
+  overflow: visible;
+  position: relative;
+  color: white;
+}
+.über-box{
+  padding-left: 100;
+  padding-top: 50;
+}
