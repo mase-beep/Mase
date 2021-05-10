@@ -108,6 +108,11 @@ body {
     color: white;
     text-align: center;
     margin-bottom: 7rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
   .row::after{
     content:"";
@@ -119,15 +124,19 @@ body {
     position: relative;
   }
   .column{
-display: flex;
-justify-content: center;
-align-items: center;
-float: left;
-width: 49%;
-padding: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 49%;
+    padding: 5px;
   }
 .kontaktdaten{
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 16;
@@ -140,9 +149,10 @@ padding: 5px;
 }
 .kliste{
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  text-align: justify;
   font-size: 18px;
   font-weight: lighter;
 }
@@ -158,6 +168,8 @@ padding: 5px;
 }
 .über-box{
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding-left: 100;
