@@ -89,7 +89,9 @@ body {
     padding-bottom: 80px;
     position: relative;
     text-align: center;
-    background-color: #192024;
+    background-color: #192024;   
+    justify-content: center;
+    align-items: center;
   }
   .box1-title{
     position: static;
